@@ -44,19 +44,23 @@ public class Song {
 	public void setYear(int e) {
 		year = e;
 	}
+
 	public int getYear() {
 		return year;
 	}
+
 	public void setTrack(int f) {
 		track = f;
 	}
+
 	public int getTrack() {
 		return track;
 	}
-	
+
 	public void showInfo() {
-		
-		System.out.println(artist+", "+title+" ( "+album+", "+year+", "+track+"번 track, "+composer+" 작곡 )");
+
+		System.out.println(
+				artist + ", " + title + " ( " + album + ", " + year + ", " + track + "번 track, " + composer + " 작곡 )");
 
 	}
 }
