@@ -1,6 +1,6 @@
 package com.javaex.ex17;
 
-public class Point extends Shape implements Drawable{
+public class Point implements Drawable{
 
 	private int x;
 	private int y;
@@ -26,6 +26,11 @@ public class Point extends Shape implements Drawable{
 	}
 
 	@Override
+	public String toString() {
+		return "Point [x=" + x + ", y=" + y + "]";
+	}
+
+	@Override
 	public void draw() {
 		System.out.println("====점을 그렸습니다.====");
 		System.out.println("x :"+ x);
@@ -33,10 +38,6 @@ public class Point extends Shape implements Drawable{
 		System.out.println("====================");
 	}
 
-	@Override
-	public double area() {
-		return 0;
-	}
-	
+
 	
 }
