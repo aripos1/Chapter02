@@ -1,6 +1,6 @@
-package com.javaex.ex15;
+package com.javaex.ex17;
 
-public class Shape {
+public abstract class Shape {
 
 	protected String fillColor;
 	protected String lineColor;
@@ -34,6 +34,8 @@ public class Shape {
 		return "Shape [fillColor=" + fillColor + ", lineColor=" + lineColor + "]";
 	}
 
-	public void draw() {}
+	public abstract void draw();
 	//abstract 상속만 가능하게 하고 직접 사용하지 못하게 함 
+	
+	public abstract double area();
 }
