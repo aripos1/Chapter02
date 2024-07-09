@@ -21,10 +21,12 @@ public class ShapeApp {
 		System.out.println(sArr[2].toString());
 		
 		for(int i = 0; i <sArr.length; i++) {
-			System.out.println(sArr[i].toString());
+			sArr[i].draw();
 		}
 		
+		System.out.println(((Circle)s02).getRadius());
 		
+		System.out.println(((Rectangle)s01).getHeight());
 		
 		// 배열
 //		Rectangle[] rArr = new Rectangle[3];
